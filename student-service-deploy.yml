@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-service-deployment
+  namespace: my-name-space
+  labels:
+    app: student-service-app
+    
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: student-service-app     
+  template:
+    metadata:
+      labels:
+        app: student-service-app
+    spec:
+      containers:
+      - name: student-container
+        image: raj2244/student-service
+        ports:
+        - containerPort: 9001
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: student-service
+  namespace: my-name-space
+spec:
+  selector:
+    app: student-service-app
+  ports:
+    - protocol: "TCP"
+      port: 9001
+      targetPort: 9001
+      
+  

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eureka-server-deployment
+  namespace: my-name-space
+  labels:
+    app: eureka-server-app
+    
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: eureka-server-app
+      
+  template:
+    metadata:
+      labels:
+        app: eureka-server-app    
+    spec:
+      containers: 
+      - name: eureka-server-app-pod
+        image: raj2244/eureka-server
+	imagePullPolicy: Always
+        ports:
+        - containerPort: 8761
