@@ -20,7 +20,7 @@ spec:
       - name: book-container
         image: raj2244/book-service
         ports:
-        - containerPort: 8761
+        - containerPort: 9091
 
 ---
 
@@ -35,7 +35,7 @@ spec:
   type: LoadBalancer
   ports:
     - protocol: "TCP"
-      port: 9002
-      targetPort: 9002
+      port: 9091
+      targetPort: 9091
       
   
