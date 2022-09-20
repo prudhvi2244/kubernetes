@@ -19,6 +19,17 @@ spec:
       containers:
       - name: book-container
         image: raj2244/book-service
+        env:
+        - name: DB_HOST
+          value: mysql-service
+        - name: DB_USERNAME
+          value: root
+        - name: DB_PASSWORD
+          value: password
+        - name: DB_NAME
+          value: bookdb
+        - name: EUREKA_URL
+          value: http://44.192.90.65:30946/eureka
         ports:
         - containerPort: 9091
 
