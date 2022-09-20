@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: eureka-container
-        image: raj2244/eureka-service
+        image: raj2244/eureka-server
         ports:
         - containerPort: 8761
 
