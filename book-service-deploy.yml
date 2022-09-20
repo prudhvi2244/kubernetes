@@ -32,6 +32,7 @@ metadata:
 spec:
   selector:
     app: book-service-app
+  type: LoadBalancer
   ports:
     - protocol: "TCP"
       port: 9002
