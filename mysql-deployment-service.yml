@@ -17,6 +17,8 @@ spec:
       - image: mysql
         name: mysql-container
         env:
+        -name: MYSQL_DATABASE
+        value: employeedb
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
