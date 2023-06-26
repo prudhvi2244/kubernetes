@@ -17,8 +17,8 @@ spec:
       - image: postgres
         name: postgresql-container
         env:
-        -name: POSTGRES_DB
-        value: employeedb
+        - name: POSTGRES_DB
+          value: employeedb
         - name: POSTGRES_PASSWORD
           valueFrom:
             secretKeyRef:
