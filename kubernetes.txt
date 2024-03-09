@@ -4,6 +4,8 @@ Kubernetes is an container orchestration tool used when our application is distr
 multiple containers.its job is to monitor,scale,restart containers automatically even if they
 are spread across multiple nodes
 
+Container orchestration automatically provisions, deploys, scales, and manages containerized applications without worrying about the underlying infrastructure. 
+
 Nodes:
 -------------
 * A Node is a worker machine in Kubernetes and may be either a virtual or a physical machine,
