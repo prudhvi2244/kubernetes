@@ -30,7 +30,7 @@ spec:
           name: postgresql
         volumeMounts:
         - name: postgresql-persistent-storage
-          mountPath: /var/lib/mysql
+          mountPath: /var/lib/postgres
       volumes:
       - name: postgresql-persistent-storage
         persistentVolumeClaim:
