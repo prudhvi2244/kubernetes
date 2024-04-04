@@ -59,7 +59,7 @@
 * choco install kubernetes-cli : To install kubectl
  
 * systeminfo
-* minikube start --driver=<driver-name>c
+* minikube start --driver=docker
 * minikube stop
 * minikube status
 * minikube dashboard
