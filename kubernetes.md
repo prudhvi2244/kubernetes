@@ -52,83 +52,80 @@
 * kubectl is command line interface for running commands againist kubernetes clusters
 
 * download chocolatey windows
-  https://chocolatey.org/install
-  chocolatey --version
-  choco
-  choco install minikube       : To install minikube
-  choco install kubernetes-cli : To install kubectl
+* https://chocolatey.org/install
+*  chocolatey --version
+* choco
+* choco install minikube       : To install minikube
+* choco install kubernetes-cli : To install kubectl
  
-  systeminfo
-  minikube start --driver=<driver-name>c
-  minikube stop
-  minikube status
-  minikube dashboard
-  minikube delete
-  minikube docker-env
+* systeminfo
+* minikube start --driver=<driver-name>c
+* minikube stop
+* minikube status
+* minikube dashboard
+* minikube delete
+* minikube docker-env
 
-  kubectl cluster-info
+* kubectl cluster-info
   
-  kubectl get node
+* kubectl get node
 
-  kubectl get deployment
+* kubectl get deployment
   
-  kubectl get replicaset
+* kubectl get replicaset
   
-  kubectl get pod
+* kubectl get pod
  
-  kubectl get service
+* kubectl get service
 
-  kubectl create deployment nginx-server --image=imageName  --port=<port-no>: To Create a deployment for given image
+* kubectl create deployment nginx-server --image=imageName  --port=<port-no>: To Create a deployment for given image
   
-  kubectl expose deployment <deployment-name> --type=NodePort : To create service of type NodePort
+* kubectl expose deployment <deployment-name> --type=NodePort : To create service of type NodePort
+* kubectl delete deployment deployment-name   : To Delete a deployment
+* kubectl describe deployment deployment-name : To Describe a deployment
+* kubectl describe pod pod-name : To Describe a pod
+* kubectl edit deployment deployment-name  : To Edit A Deployment
+* kubectl logs pod-name
+* kubectl get nodes
 
 
-
-  kubectl delete deployment deployment-name   : To Delete a deployment
-  kubectl describe deployment deployment-name : To Describe a deployment
-  kubectl describe pod pod-name : To Describe a pod
-  kubectl edit deployment deployment-name  : To Edit A Deployment
-  kubectl logs pod-name
-  kubectl get nodes
-
-
-  kubectl create namespace name_of_namespace
-  kubectl get namespace
-  kubectl delete namespace name_of_namespace
+* kubectl create namespace name_of_namespace
+* kubectl get namespace
+* kubectl delete namespace name_of_namespace
 	
-  kubectl -h 
+* kubectl -h 
   
 
-  kubectl logs pod-name
+* kubectl logs pod-name
 
-  kubectl apply -f configuration_file_name.yml : create deployment in default namespace
-  kubectl apply -f configuration_file_name.yml --namespace=<namespace-name> : create deployment
+* kubectl apply -f configuration_file_name.yml : create deployment in default namespace
+* kubectl apply -f configuration_file_name.yml --namespace=<namespace-name> : create deployment
                                          in provided namespace
-  kubectl get deployment --namespace=<namespace-name>
-  kubectl get pod --namespace=<namespace-name>
+* kubectl get deployment --namespace=<namespace-name>
+* kubectl get pod --namespace=<namespace-name>
 
-  kubectl delete -f configuration_file_name.yml
+* kubectl delete -f configuration_file_name.yml
 
-  minikube service service_name --url: To Start a service
+* minikube service service_name --url: To Start a service
 
-  kubectl get all
+* kubectl get all
 
 
-  kubectl exec -it <pod_name> bash
+* kubectl exec -it <pod_name> bash
 
-  https://amazon-eks.s3.us-west-2.amazonaws.com/cloudformation/2020-07-23/amazon-eks-vpc-private-subnets.yaml
+* https://amazon-eks.s3.us-west-2.amazonaws.com/cloudformation/2020-07-23/amazon-eks-vpc-private-subnets.yaml
 
   
 
-  aws eks --region us-east-2 describe-cluster --name <cluster-name> --query cluster.status
+* aws eks --region us-east-2 describe-cluster --name <cluster-name> --query cluster.status
 
-  aws eks update-kubeconfig --region us-east-2 --name <cluster-name>
+* aws eks update-kubeconfig --region us-east-2 --name <cluster-name>
   
-  aws sts get-caller-identity
+* aws sts get-caller-identity
 
-  aws iam list-users
+* aws iam list-users
 
-  Node Group Attach Below Policy to Role
+# Node Group Attach Below Policy to Role
   
   * AMAZONEKS_CNI_POLICY
   * AmazonEKSWorkerNodePolicy
