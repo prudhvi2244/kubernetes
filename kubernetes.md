@@ -36,20 +36,19 @@
 
 # Kubernetes Features
 
-1)Managing Multiple Containers as one entity
-2)Resource Usage Monitoring
-3)Health Checks
-4)Networking
-5)Load Balancing
+* Managing Multiple Containers as one entity
+* Resource Usage Monitoring
+* Health Checks
+* Networking
+* Load Balancing
 
-========================================================================================
 
-What is minikube?
+# What is minikube
 * Minikube is a tool that makes it easy to run kubernetes locally.
 * Minikube runs a single-node kubernetes cluster inside a vitual machine on your laptop
   for users looking to try out kubernetes
 
-What is KUBECTL?
+# What is KUBECTL?
 * kubectl is command line interface for running commands againist kubernetes clusters
 
 * download chocolatey windows
@@ -142,24 +141,18 @@ What is KUBECTL?
 
   minikube tunnel
 
+# Deploy Spring Boot App With Kubernetes
 
-
-
-
-==========================================================================
-==============================================================================
-Deploy Spring Boot App With Kubernetes
-=============================================================
-1)minikube start
-2)minikube status
-3)kubectl create namespace rajdemo
-4)Create manifest file which will be used for creating pods and services.
-  >kubectl create deployment eureka-server-deployment --image=raj2244/sample-app-1:latest --dry-run -o=yaml > eurek-server-deployment.yaml
-  >kubectl create service <service-type> <service-name> --tcp=8080:8080 --dry-run -o=yaml > eurek-server-service.yaml
-5)Deployment file points to spring boot application image and it pull that image once Pod is
+* minikube start
+* minikube status
+* kubectl create namespace rajdemo
+* Create manifest file which will be used for creating pods and services.
+  * kubectl create deployment eureka-server-deployment --image=raj2244/sample-app-1:latest --dry-run -o=yaml > eurek-server-deployment.yaml
+  * kubectl create service <service-type> <service-name> --tcp=8080:8080 --dry-run -o=yaml > eurek-server-service.yaml
+* Deployment file points to spring boot application image and it pull that image once Pod is
   being created.
-  >kubectl create -f deployment.yaml  
-  >kubectl create -f service.yaml  
+  * kubectl create -f deployment.yaml  
+  * kubectl create -f service.yaml  
 
 6)minikube service <service-name>
 *****************************************************************************
