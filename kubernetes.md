@@ -1,10 +1,7 @@
-What is kubernetes[k8's]?
----------------------
-Kubernetes is an container orchestration tool used when our application is distributed in
-multiple containers.its job is to monitor,scale,restart containers automatically even if they
-are spread across multiple nodes
-
-Container orchestration automatically provisions, deploys, scales, and manages containerized applications without worrying about the underlying infrastructure. 
+# What is kubernetes?
+_Kubernetes also known as "K8s", is an open-source container archestration platform developed by google._
+_IT is designed to automate the deployment, scaling and manegemnt of containerized applications across cluster of nodes._
+_Kubernetes provides a consistent and reliable way to manage applications, regardless of whether they are running on-premises, in the cloud or in the hybrid environments_
 
 Nodes:
 -------------
