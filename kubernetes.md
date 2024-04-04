@@ -5,36 +5,37 @@
 
 ### _Kubernetes provides a consistent and reliable way to manage applications, regardless of whether they are running on-premises, in the cloud or in the hybrid environments_
 
-Nodes:
--------------
+# Nodes:
+
 * A Node is a worker machine in Kubernetes and may be either a virtual or a physical machine,
   depending on the cluster.
 * Each Node is managed by the control plane
 * A Node can have multiple pods, and the Kubernetes control plane automatically handles
   scheduling the pods across the Nodes in the cluster. 
 
-Every Kubernetes Node runs at least:
+## Every Kubernetes Node runs at least:
 * Kubelet, a process responsible for communication between the Kubernetes control plane and
   the Node. it manages the Pods and the containers running on a machine.
 * A container runtime (like Docker) responsible for pulling the container image from a registry,
   unpacking the container, and running the application.
 
-What is Kubernetes Cluster? 
+# What is Kubernetes Cluster? 
+
 * A Kubernetes cluster is a set of nodes that run containerized applications. 
 * Containerized applications packages an app with its dependencies and some necessary services.
 * Kubernetes clusters allow containers to run across multiple machines and environments:
   virtual, physical, cloud-based, and on-premises.
 
-PODS:
-===========
+# PODS
+
 * Pods are the smallest, most basic deployable objects in Kubernetes.
 * A Pod represents a single instance of a running process in your cluster.
 * Pods contain one or more containers, such as Docker containers. 
 * When a Pod runs multiple containers, the containers are managed as a single entity and 
   share the Pod's resources.
 
-Kubernetes Features:
-========================
+# Kubernetes Features
+
 1)Managing Multiple Containers as one entity
 2)Resource Usage Monitoring
 3)Health Checks
